@@ -2,7 +2,13 @@
 .timeline-card {
   position: relative;
   margin-left: 16px; }
-
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }  
 .timeline-card:before {
   content: '';
   display: inline-block;
@@ -34,8 +40,7 @@
 html {
   scroll-behavior: smooth; }
 
-html, body {
-  overflow-x: hidden; }
+
 
 .container {
   max-width: 1140px; }
